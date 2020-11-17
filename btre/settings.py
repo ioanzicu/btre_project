@@ -150,3 +150,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = ''  # Enter your email
 EMAIL_HOST_PASSWORD = ''  # Enter password to email
 EMAIL_USE_TLS = True
+
+
+# Import local settings for production server
+try:
+    from .local_settings import *
+except ImportError:
+    pass
