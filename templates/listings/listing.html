@@ -186,7 +186,7 @@
             name="realtor_email"
             value="{{ listing.realtor.email }}"
           />
-          <input type="hidden" name="realtor_id" value="{{ listing.id }}" />
+          <input type="hidden" name="listing_id" value="{{ listing.id }}" />
           <div class="form-group">
             <label for="property_name" class="col-form-label">Property:</label>
             <input
@@ -194,7 +194,6 @@
               name="listing"
               class="form-control"
               value="{{ listing.title }}"
-              disabled
             />
           </div>
           <div class="form-group">
